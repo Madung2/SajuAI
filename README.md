@@ -14,3 +14,8 @@
 만세력을 만든다
 만세력으로 나온 내용을 DB저장하고 RAG
 
+
+
+## in progress
+
+https://rgbitcode.com/blog/senspond/44
