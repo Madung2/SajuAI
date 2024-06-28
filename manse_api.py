@@ -32,10 +32,8 @@ class SolarToLunarAPI:
         def find_time_cheongan(date:str, time:str):
             # date의 0번째 글자로천간의 idx를 추출한다.
             first_idx = CHEONGAN[date[0]]['idx']
-            print('first_idx:', first_idx)
             time_jiji_idx =JIJI[time[0]]['idx']
             time_cheongan_idx = (time_jiji_idx)+ 2*(first_idx%5-1)
-            print('time_cheongan_idx:', time_cheongan_idx)
             time_cheongan =u.get_item_by_idx(CHEONGAN, time_cheongan_idx)
             return time_cheongan
         
@@ -89,7 +87,7 @@ class SolarToLunarAPI:
 api = SolarToLunarAPI()
 year = '1991'
 month = '07'
-day = '09'
+day = '25'
 time = "자시"
 lunar_info = api.get_all_four_pillar_info(year, month, day, time)
 print(lunar_info)
